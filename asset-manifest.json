@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/demar-portfoilo/static/css/main.1a4ddce1.css",
+    "main.js": "/demar-portfoilo/static/js/main.0f5b34ac.js",
+    "static/media/edutech.png": "/demar-portfoilo/static/media/edutech.e42f438dc6e3e374fb6d.png",
+    "static/media/edu.png": "/demar-portfoilo/static/media/edu.27b888b73c4313d5c7b0.png",
+    "static/media/eLearning.png": "/demar-portfoilo/static/media/eLearning.fd56e6a8e54b7ad09283.png",
+    "static/media/hst.png": "/demar-portfoilo/static/media/hst.229e1889f9132adfe66c.png",
+    "static/media/realestate.png": "/demar-portfoilo/static/media/realestate.08b54f2c3755913ba13b.png",
+    "index.html": "/demar-portfoilo/index.html",
+    "main.1a4ddce1.css.map": "/demar-portfoilo/static/css/main.1a4ddce1.css.map",
+    "main.0f5b34ac.js.map": "/demar-portfoilo/static/js/main.0f5b34ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a4ddce1.css",
+    "static/js/main.0f5b34ac.js"
+  ]
+}
