@@ -1,0 +1,86 @@
+footer {
+    background: var(--color-primary);
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 7rem;
+}
+
+footer a {
+    color: var(--color-bg);
+}
+
+.footerLogo {
+    font-size: 2rem;
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.footerLogo:hover,
+.permaLinks li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--color-bg);
+}
+
+.permaLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.permaLinks li {
+    display: inline-block;
+    margin: 0 0.5rem 5rem 0.5rem;
+}
+
+.permaLinks li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    margin: 0 7px;
+    color: var(--color-bg);
+    font-weight: 400;
+}
+
+.footerSocials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.footerSocials a {
+    background: var(--color-bg);
+    color: var(--color-white);
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid transparent;
+}
+
+.footerSocials a:hover {
+    background: transparent;
+    color: var(--color-bg);
+    border-color: var(--color-bg);
+}
+
+/* =========== MEDIA QUERIES (Small Devices) ========== */
+
+@media screen and (max-width: 600px) {
+    .permaLinks {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .permaLinks li {
+        margin: 0;
+    }
+
+    .permaLinks li::after {
+        content: none !important;
+    }
+}

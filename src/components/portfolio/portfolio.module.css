@@ -1,0 +1,64 @@
+.portfolioContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.portfolioItem {
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.portfolioItem:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.portfolioItemImage {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.portfolioItem h3 {
+    margin: 1.2rem 0 2rem;
+}
+
+.portfolioItemCta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.technologyTag {
+    display: inline-block; /* Makes the tags sit side-by-side */
+    padding: 5px 10px;      /* Adjust padding as needed */
+    margin-right: 5px;   /* Space between tags */
+    margin-bottom: 5px;  /* Space between tags if they wrap */
+    background-color: #f0f0f0; /* Example background color */
+    border-radius: 3px;     /* Rounded corners */
+    font-size: 0.8rem;      /* Adjust font size */
+    color: #333;           /* Adjust text color */
+    border: 1px solid #ccc;  /* Optional border */
+    white-space: nowrap; /* Prevent tag text from wrapping */
+  }
+/* =========== MEDIA QURIES (Medium devices) ========== */
+
+@media screen and (max-width: 1024px) {
+    .portfolioContainer {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+/* =========== MEDIA QURIES (Small devices) ========== */
+
+@media screen and (max-width: 600px) {
+    .portfolioContainer {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
